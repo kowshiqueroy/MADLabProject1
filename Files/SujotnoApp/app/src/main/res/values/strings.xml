@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SujotnoApp</string>
+    <string name="dev">Developer: Kowshique Roy</string>
+    <string name="Name">সুযত্ন\nApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Hello home</string>
+    <string name="setting">Hello setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add">Hello add</string>
+
+    <string name="notice">Hello notice</string>
+
+
+</resources>
