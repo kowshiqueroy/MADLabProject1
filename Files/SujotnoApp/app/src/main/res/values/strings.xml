@@ -9,6 +9,11 @@
     <string name="add">Hello add</string>
 
     <string name="notice">Hello notice</string>
+    <string name="confirm">Confirm</string>
+    <string name="password">Password</string>
+    <string name="logout">Logout</string>
+    <string name="nhello_nkowshique">\nHello\nKowshique</string>
+    <string name="connectb">Connect</string>
 
 
 </resources>

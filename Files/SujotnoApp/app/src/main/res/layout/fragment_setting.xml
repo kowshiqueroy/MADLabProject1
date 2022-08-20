@@ -7,39 +7,143 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:text="@string/nhello_nkowshique"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:text="@string/logout"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/l1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/setting" />
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logout"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="300dp"
+             />
+
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+           >
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+
+                android:paddingEnd="100dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="@string/confirm"
+                android:inputType="textPassword"
+                android:paddingEnd="100dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/connect_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Connect"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/l1"
+        android:layout_marginTop="160dp"
+        android:text="Connect Friends"
+        android:textSize="30dp" />
 
 
     <LinearLayout
-        android:id="@+id/layout"
+        android:id="@+id/layout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_centerInParent="true">
+        android:layout_alignTop="@+id/cf"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="false">
 
         <EditText
-            android:id="@+id/pass"
+            android:id="@+id/f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingEnd="200dp"
+            android:hint="Username" />
 
-            android:hint="Password" />
-
-        <EditText
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-         android:layout_marginLeft="200dp"
-            android:hint="F" />
+            android:layout_marginStart="5dp"
+            android:paddingEnd="5dp"
+            android:hint="Add" />
     </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/layout2"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="FriendList"
+/>
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/layout"
-        android:layout_marginTop="100dp"
-        android:id="@+id/connect_button"
-        android:text="Connect"/>
+        android:textSize="20dp"
+        android:text="FriendList"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="FriendList"
+        />
+
+</LinearLayout>
+
+
+
 
 </RelativeLayout>
