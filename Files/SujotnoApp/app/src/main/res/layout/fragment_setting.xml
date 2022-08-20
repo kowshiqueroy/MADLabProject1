@@ -11,4 +11,35 @@
         android:layout_height="match_parent"
         android:text="@string/setting" />
 
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_marginLeft="200dp"
+            android:hint="F" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/layout"
+        android:layout_marginTop="100dp"
+        android:id="@+id/connect_button"
+        android:text="Connect"/>
+
 </RelativeLayout>
